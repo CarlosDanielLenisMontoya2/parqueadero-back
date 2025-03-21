@@ -30,6 +30,7 @@ public class UsuarioTransformer {
         if (usuarioDto == null)return null;
 
         Usuario usuario = new Usuario();
+        usuario.setId(usuarioDto.getId());
         usuario.setNombre(usuarioDto.getNombre());
         usuario.setEmail(usuarioDto.getEmail());
         usuario.setTelefono(usuarioDto.getTelefono());
